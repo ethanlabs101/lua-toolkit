@@ -19,6 +19,7 @@ Features may include:
 |  Tool   | Description | Status |
 |---------|-------------|--------|
 | 🛡️ [Lua File Integrity]() | ***Lua file name integrity checker.*** | 🚧
+|    [Lua XOR Encoder]() | ***Basic Lua XOR encoder/decoder.*** | 🚧
 
 Legend:
 - ✅ Completed
