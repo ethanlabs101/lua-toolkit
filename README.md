@@ -24,4 +24,4 @@ Legend:
 - ✅ Completed
 - 🚧 In Progress
 
->>> Built because Lua is fun.
+> Built because Lua is fun.
