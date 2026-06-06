@@ -9,4 +9,4 @@ they are layered with obfuscation, encryption, and encoding.
 
 Although its relatively simple, this function proved useful in its enviornment.
 
-_____________________ Check It Out! -> [Lua File Integrity]() ______________________
+Check It Out! -> [Lua File Integrity]()
