@@ -14,4 +14,14 @@ Features may include:
 * Educational cryptography demonstrations
 * Fengari browser-based Lua experiments
 
-Built because Lua is fun.
+---
+
+|  Tool   | Description | Status |
+|---------|-------------|--------|
+| 🛡️ [Lua File Integrity]() | ***Lua file name integrity checker.*** | 
+
+Legend:
+- ✅ Completed
+- 🚧 In Progress
+
+>>> Built because Lua is fun.
