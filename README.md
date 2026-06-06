@@ -18,7 +18,7 @@ Features may include:
 
 |  Tool   | Description | Status |
 |---------|-------------|--------|
-| 🛡️ [Lua File Integrity]() | ***Lua file name integrity checker.*** | 🚧 |
+| 🛡️ [Lua File Integrity]() | ***Lua file name integrity checker.*** |  🚧 |
 
 Legend:
 - ✅ Completed
