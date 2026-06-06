@@ -1,0 +1,1 @@
+# Lua XOR encoder
