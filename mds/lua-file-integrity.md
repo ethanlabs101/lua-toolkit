@@ -1,4 +1,4 @@
-# Lua GG File Name Checker
+# ***Lua GG File Name Checker***
 
 Here is a small file name check for GG lua scripting.
 
@@ -38,7 +38,7 @@ Standard Lua intentionally excludes file I/O libraries that allow reading the sc
 
 ---
 
-## How Does it Work?
+## ***How Does it Work?***
 
 Let's break it down:
 
@@ -64,7 +64,7 @@ The Lua pattern:
 
 is then used to extract only the filename from that path.
 
-### Understanding the Pattern
+### ***Understanding the Pattern***
 
 The pattern is made up of three parts:
 
@@ -174,7 +174,7 @@ which now contains:
 file_name.lua
 ```
 
-### The Filename Check
+### ***The Filename Check***
 
 Once the filename has been extracted, it is compared against the expected script name:
 
@@ -212,7 +212,7 @@ causing the script to terminate.
 
 ---
 
-### Limitations
+### ***Limitations***
 
 This is not a true file integrity check.
 
@@ -226,7 +226,7 @@ Its strength comes from simplicity rather than security.
 
 ---
 
-### Sources
+### ***Sources***
 
 | Link | Description |
 |------|-------------|
