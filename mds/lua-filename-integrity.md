@@ -134,7 +134,7 @@ A common misconception would be the pattern should return:
 storageemulated0Downloadfile_name.lua
 ```
 
-because every character except `/` technically matches `[^/]`.
+because every character except `/` technically matches `storageemulated0Downloadfile_name.lua`.
 
 However, the `$` forces Lua to find a match that reaches the **end of the string**.
 
