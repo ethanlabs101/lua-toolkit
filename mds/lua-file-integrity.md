@@ -1,6 +1,6 @@
-# Lua File Integrity
+# Lua GG File Name Checker
 
-Here is a small file integrity check for GG lua scripting.
+Here is a small file name check for GG lua scripting.
 
 I developed this in the Game Guardian niche as a simple way to protect
 the name of your script. 
@@ -48,7 +48,7 @@ The key component of this utility is:
 gg.getFile():match('[^/]+$')
 ```
 
-This means `gg.getFile()` reads the full path of the currently executing script.
+The Game Guardian API function `gg.getFile()` returns the full path of the currently executing script.
 
 For example:
 
@@ -62,9 +62,11 @@ The Lua pattern:
 [^/]+$
 ```
 
-is responsible for extracting only the filename from that path.
+is then used to extract only the filename from that path.
 
 ### Understanding the Pattern
+
+The pattern is made up of three parts:
 
 ```lua
 [^/]
@@ -72,9 +74,7 @@ is responsible for extracting only the filename from that path.
 
 Matches any character that is **not** a forward slash (`/`).
 
-The caret (`^`) inside square brackets means "not."
-
-Examples:
+The caret (`^`) inside square brackets means "not," so this pattern will match characters such as:
 
 ```text
 f
@@ -92,7 +92,7 @@ u
 a
 ```
 
-All match because none of them are `/`.
+because none of them are `/`.
 
 ---
 
@@ -102,15 +102,21 @@ All match because none of them are `/`.
 
 Means "one or more" of the previous match.
 
-So:
+This turns:
+
+```lua
+[^/]
+```
+
+into:
 
 ```lua
 [^/]+
 ```
 
-means:
+which means:
 
-> Match one or more characters that are not a slash.
+> Match one or more consecutive characters that are not a slash.
 
 ---
 
@@ -120,15 +126,17 @@ $
 
 Represents the end of the string.
 
-Combining everything:
+This is the part that makes the pattern useful.
 
-```lua
-[^/]+$
+A common misconception is that the pattern should return:
+
+```text
+storageemulated0Downloadfile_name.lua
 ```
 
-tells Lua:
+because every character except `/` technically matches `[^/]`.
 
-> Starting from the end of the path, capture every character until a slash is encountered.
+However, the `$` forces Lua to find a match that reaches the **end of the string**.
 
 Given:
 
@@ -136,23 +144,39 @@ Given:
 /storage/emulated/0/Download/file_name.lua
 ```
 
-The result becomes:
+Lua sees multiple valid non-slash sequences:
+
+```text
+storage
+emulated
+0
+Download
+file_name.lua
+```
+
+But only one of them appears at the very end of the path:
 
 ```text
 file_name.lua
 ```
 
-which is then stored in:
+Because of the `$`, that is the value returned by `match()`.
+
+The result is stored in:
 
 ```lua
 detector
 ```
 
----
+which now contains:
 
-## The Filename Check
+```text
+file_name.lua
+```
 
-Once the filename has been extracted, it is compared against the expected name:
+### The Filename Check
+
+Once the filename has been extracted, it is compared against the expected script name:
 
 ```lua
 name = "file_name.lua"
@@ -164,15 +188,9 @@ else
 end
 ```
 
-If the script has its original name:
+If the filename matches, execution continues normally.
 
-```text
-file_name.lua
-```
-
-the check succeeds and execution continues normally.
-
-If someone renames the file:
+If someone renames the script:
 
 ```text
 my_free_premium_script.lua
@@ -192,17 +210,16 @@ name = "file_name.lua"
 
 causing the script to terminate.
 
----
+### Limitations
 
-## Limitations
+Despite the title, this is not a true file integrity check.
 
-This is not a true integrity check.
-
-A real integrity check typically verifies file contents using techniques such as checksums or cryptographic hashes.
+A real integrity check verifies file contents using techniques such as hashes or checksums to detect modifications.
 
 This utility only verifies the filename.
 
 However, within the Game Guardian scripting community, it can still be useful for discouraging casual renaming, repackaging, or redistribution of scripts by inexperienced users.
 
 Its strength comes from simplicity rather than security.
+
 
