@@ -1,4 +1,5 @@
-# Lua Toolkit <p> <img src="https://skillicons.dev/icons?i=lua" /> </p>
+# Lua Toolkit
+![Lua](https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white)
 
 A collection of Lua utilities, experiments, and developer tools built for learning and exploration.
 
