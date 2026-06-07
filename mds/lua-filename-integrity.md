@@ -32,9 +32,7 @@ end
 In GG, there are many GG-specific API functions such as gg.alert, gg.sleep etc.
 This function utilizes a GG-specifc API called gg.getFile().
 
-Unlike standard Lua which does not have a direct equivalent to gg.getFile(),
-this specific API function allows you to return the path to the current script
-file being executed.
+Unlike Game Guardian, standard Lua does not provide a built-in function for retrieving the path of the currently executing script.
 
 Standard Lua intentionally excludes file I/O libraries that allow reading the script's own path or contents from within the script itself for security and sandboxing reasons.
 
