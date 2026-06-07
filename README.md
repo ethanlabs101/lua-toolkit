@@ -21,7 +21,7 @@ Features may include:
 
 |  Tool   | Description | Status |
 |---------|-------------|--------|
-| 🛡️ [Lua Filename Integrity](https://github.com/ethanlabs101/lua-toolkit/blob/main/mds/lua-filename-integrity.md) | ***Lua file name integrity checker.*** | ✅
+| 🛡️ [Lua Filename Integrity](https://github.com/ethanlabs101/lua-toolkit/blob/main/mds/lua-filename-integrity.md) | ***Lua file name integrity checker. For GG*** | ✅
 | 🔄 [Lua XOR Encoder](https://github.com/ethanlabs101/lua-toolkit/blob/main/mds/lua-xor-encoder.md) | ***Basic Lua XOR encoder/decoder.*** | 🚧
 
 Legend:
