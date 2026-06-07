@@ -13,8 +13,9 @@ Features may include:
 * Beautifiers and formatters
 * Utility libraries
 * Educational cryptography demonstrations
-* Fengari browser-based Lua experiments
+* Fengari web-based Lua experiments
 
+> Built because Lua is fun.
 ---
 
 |  Tool   | Description | Status |
@@ -25,5 +26,3 @@ Features may include:
 Legend:
 - ✅ Completed
 - 🚧 In Progress
-
-> Built because Lua is fun.
