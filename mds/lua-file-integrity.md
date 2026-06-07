@@ -210,9 +210,11 @@ name = "file_name.lua"
 
 causing the script to terminate.
 
+---
+
 ### Limitations
 
-Despite the title, this is not a true file integrity check.
+This is not a true file integrity check.
 
 A real integrity check verifies file contents using techniques such as hashes or checksums to detect modifications.
 
@@ -222,4 +224,11 @@ However, within the Game Guardian scripting community, it can still be useful fo
 
 Its strength comes from simplicity rather than security.
 
+---
 
+### Sources
+
+| Link | Description |
+|------|-------------|
+| [Game Guardian](https://gameguardian.net/forum/) | Official Game Guardian homepage
+| [gg.getFile()](https://gameguardian.net/help/classgg.html#a835c5691f8e6512057a87e86169a0164) | Official GG gg.getFile() documentation
