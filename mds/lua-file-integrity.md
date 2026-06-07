@@ -128,7 +128,7 @@ Represents the end of the string.
 
 This is the part that makes the pattern useful.
 
-A common misconception is that the pattern should return:
+A common misconception would be the pattern should return:
 
 ```text
 storageemulated0Downloadfile_name.lua
@@ -226,7 +226,7 @@ Its strength comes from simplicity rather than security.
 
 ---
 
-### ***Sources***
+### ***Sources / Links***
 
 | Link | Description |
 |------|-------------|
