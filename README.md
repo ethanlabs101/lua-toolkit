@@ -1,8 +1,4 @@
-# Lua Toolkit <p align="right">  <img src="https://skillicons.dev/icons?i=lua" /> </p>
-
-<p align="right">
-  <img src="https://skillicons.dev/icons?i=lua" />
-  </p>
+# Lua Toolkit <p align="left">  <img src="https://skillicons.dev/icons?i=lua" /> </p>
 
 A collection of Lua utilities, experiments, and developer tools built for learning and exploration.
 
