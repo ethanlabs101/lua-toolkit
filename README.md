@@ -14,6 +14,7 @@ Features may include:
 * Utility libraries
 * Educational cryptography demonstrations
 * Fengari web-based Lua experiments
+* Game-Guardian Lua utilities
 
 > Built because Lua is fun.
 
